@@ -1,0 +1,8 @@
+<form [formGroup]="userWordForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+        <mat-label>Proba</mat-label>
+        <input matInput placeholder="Marca" maxlength="5" minlength="5" type="text" name="guess" id="guess"
+            formControlName="guess" pattern="[A-Za-z]{5}">
+
+    </mat-form-field>
+</form>
